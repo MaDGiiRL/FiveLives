@@ -4,12 +4,11 @@
       background-image: url('/images/BG_02 2.png');
       background-size: cover;
       background-attachment: fixed;
-
     }
   </style>
 
   <div class="container-fluid text-white overflow-hidden">
-    <div class="row">
+    <div class="row flex-column-reverse flex-md-row">
       <!-- COLONNA SINISTRA: STEP -->
       <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center py-5">
         <div class="step-box bg-blur">
@@ -38,16 +37,31 @@
         </div>
       </div>
 
-      <!-- COLONNA DESTRA: ABOUT US (visibile sempre, ma posizionata diversamente in mobile) -->
-      <div class="col-12 col-md-6 d-flex flex-column justify-content-end align-items-end pe-md-5 mt-5 mt-md-0">
-        <div class="about-box bg-blur p-4 w-100" data-aos="fade-left" data-aos-delay="500">
-          <h2 class="fw-bold">ABOUT <span class="text-yellow">US</span></h2>
-          <p class="text-light small">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quam accusantium reiciendis nisi necessitatibus ipsum alias temporibus tempore, nam ab, amet eos architecto eveniet modi optio, repellat quas dolore deserunt obcaecati adipisci corrupti. Delectus possimus velit earum debitis quisquam enim labore repellendus! Excepturi quae ipsum delectus ipsam officiis repudiandae necessitatibus saepe, beatae et quam est voluptate tempore, eum eius explicabo. Laudantium, recusandae saepe quibusdam vero optio incidunt perferendis officiis ex, consequuntur nam molestiae pariatur aliquam placeat? Quod alias non reprehenderit reiciendis repellat ad et impedit. Voluptates nam quis et aliquid ratione dolorum omnis, incidunt labore aspernatur natus at numquam dolorem consectetur ex asperiores repellendus ab similique nesciunt placeat eveniet perferendis nisi hic vel eos? Minus repellat hic veniam iusto ducimus possimus dolorem iste nostrum cupiditate, nisi magnam labore, dolorum repellendus officiis est ullam molestias mollitia odio animi obcaecati dignissimos porro ratione magni eligendi! Quidem quasi laboriosam veritatis labore quisquam laborum?
-          </p>
+      <!-- COLONNA DESTRA: TITOLO + ABOUT -->
+      <div class="col-12 col-md-6 d-flex flex-column justify-content-between py-5 px-md-5">
+        <!-- Titolo in alto -->
+        <div class="mb-4 text-start pt-5 pt-md-0 pt-lg-0">
+          <h1 class="fw-bold display-1 text-white">WELCOME TO <span class="text-yellow">FIVELIVES</span></h1>
+          <p class="lead text-light">Your adventure in GTA V RP starts here.</p>
+        </div>
+
+        <!-- Box About sticky in basso -->
+        <div class="about-box bg-blur p-4 mt-md-0" data-aos="fade-left" data-aos-delay="500">
+
+          <div class="intro-box bg-blur p-4 text-white">
+            <h2 class="fw-bold">What is <span class="text-yellow">FiveLives</span>?</h2>
+            <p>
+              <strong>FiveLives</strong> is a next-generation roleplay server based on <em>Grand Theft Auto V</em>, designed to deliver a fully immersive, realistic, and custom-tailored gaming experience.
+            </p>
+            <p>
+              With a carefully balanced economy, structured rules, and an active, welcoming community, FiveLives is the go-to place for players seeking deep storytelling and impactful choices.
+            </p>
+            <p>
+              Whether you dream of becoming a business mogul, a law enforcement officer, a paramedic, or living life on the edge, you'll find your path here.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
 </x-layout>

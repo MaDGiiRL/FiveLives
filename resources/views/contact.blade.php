@@ -64,7 +64,7 @@
             }
         }
 
-       
+
         .sparkle-button {
             position: relative;
             display: inline-block;
@@ -117,18 +117,14 @@
     </style>
 
     <div class="container py-5 mb-5 mt-5">
-        <div class="row justify-content-center mb-5">
-            <div class="col-12 text-center pt-5">
-                <h1 class="display-1 fw-bold">CONTACT <span class="text-yellow">US</span></h1>
-                <p class="section-subtitle text-center mb-5">We’d love to hear from you. Please use the form below to send us your message or inquiry, and we’ll respond promptly.</p>
-            </div>
-            <div class="col-lg-11">
+        <div class="row justify-content-center mb-5 p-2">
+            <div class="col-lg-11 mt-5">
                 <div class="row contact-card px-5 p-5 shadow-lg bg-blur">
-                    <div class="col-md-5 text-center">
-                        <div class="sparkle-wrapper my-4">
+                    <div class="col-md-5 text-center mt-3 mt-md-0 mt-lg-0 order-md-first order-lg-firsto order-last">
+                        <div class="sparkle-wrapper my-5">
                             <a href="#"><img src="/images/1.png" class="rounded-5 sparkle-img"></a>
                         </div>
-                        <div class="sparkle-wrapper mb-3">
+                        <div class="sparkle-wrapper mb-5">
                             <a href="#"><img src="/images/2.png" class="rounded-5 sparkle-img"></a>
                         </div>
                         <div class="sparkle-wrapper">
@@ -136,6 +132,8 @@
                         </div>
                     </div>
                     <div class="col-md-7">
+                    <h1 class="display-1 fw-bold">CONTACT <span class="text-yellow">US</span></h1>
+                        <p class="section-subtitle text-center ">We’d love to hear from you. Please use the form below to send us your message or inquiry, and we’ll respond promptly.</p>
                         <!-- Imposta l'action con la rotta definita e il metodo POST -->
                         <form action="" method="POST" class="contactForm">
                             @csrf
@@ -154,7 +152,7 @@
                                 <textarea name="message" rows="4" placeholder="Message" required></textarea>
                             </div>
                             <div class="mt-3">
-                                <button type="submit" class="sparkle-button">Send Message</button>
+                                <button type="submit" class="btn yellow-button w-100">Send Message</button>
                             </div>
                         </form>
                     </div>

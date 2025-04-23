@@ -3,3 +3,4 @@ import 'bootstrap';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'sweetalert2/src/sweetalert2.scss';
+

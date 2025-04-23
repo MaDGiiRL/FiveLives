@@ -37,9 +37,10 @@
                             <a class="nav-link" href="{{route('profile')}}">Hi, {{ Auth::user()->name }}</a>
                         </li>
                         <li class="nav-item">
-                            <form action="{{ route('logout') }}" method="POST">
+                            <a href="#" onclick="confirmLogout(event)" class="btn btn-outline-danger mt-1">Logout</a>
+
+                            <form id="logout-form" method="POST" action="{{ route('logout') }}" style="display: none;">
                                 @csrf
-                                <button type="submit" class="btn btn-outline-danger">Logout</button>
                             </form>
                         </li>
                     </ul>

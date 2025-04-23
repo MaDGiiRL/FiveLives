@@ -191,7 +191,6 @@ a.footer-link:hover {
     color: white;
 }
 
-/* Homepage Layout */
 .step-box {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
@@ -245,16 +244,13 @@ a.footer-link:hover {
 }
 
 .about-box {
-    position: relative;
-    bottom: 0;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     max-width: 600px;
-    margin-top: 2rem;
-    font-size: 18px
+    font-size: 18px;
 }
 
-/* solo da md in su sticky */
+/* Sticky solo da md in su */
 @media (min-width: 768px) {
     .about-box {
         position: sticky;
