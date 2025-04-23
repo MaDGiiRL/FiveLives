@@ -15,7 +15,7 @@
           <div class="step-title">STEP 1</div>
           <div class="step-heading">Register an Account</div>
           <div class="step-desc">You’ll need an official copy of the game Grand Theft Auto V.</div>
-          <button class="step-button">REGISTRATION</button>
+          <button class="btn btn-outline-danger fs-4">REGISTRATION</button>
         </div>
 
         <div class="text-center arrow">↓</div>
@@ -24,7 +24,7 @@
           <div class="step-title">STEP 2</div>
           <div class="step-heading">Download the Launcher</div>
           <div class="step-desc">You’ll need our launcher to play on the server.</div>
-          <button class="step-button">DOWNLOAD</button>
+          <button class="btn btn-outline-danger fs-4">DOWNLOAD</button>
         </div>
 
         <div class="text-center arrow">↓</div>
@@ -33,7 +33,7 @@
           <div class="step-title">STEP 3</div>
           <div class="step-heading">Read Server Rules</div>
           <div class="step-desc">To be able to work on our server you need to know.</div>
-          <button class="step-button">READ RULES</button>
+          <button class="btn btn-outline-danger fs-4">READ RULES</button>
         </div>
       </div>
 

@@ -132,9 +132,9 @@
                         </div>
                     </div>
                     <div class="col-md-7">
-                    <h1 class="display-1 fw-bold">CONTACT <span class="text-yellow">US</span></h1>
-                        <p class="section-subtitle text-center ">We’d love to hear from you. Please use the form below to send us your message or inquiry, and we’ll respond promptly.</p>
-                        <!-- Imposta l'action con la rotta definita e il metodo POST -->
+                        <h1 class="display-1 fw-bold">CONTACT <span class="text-yellow">US</span></h1>
+                        <p class="section-subtitle">We’d love to hear from you. Please use the form below to send us your message or inquiry, and we’ll respond promptly.</p>
+
                         <form action="" method="POST" class="contactForm">
                             @csrf
                             <div class="row g-2">

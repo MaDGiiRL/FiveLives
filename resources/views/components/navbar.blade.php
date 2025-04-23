@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-custom " aria-label="Offcanvas navbar large">
+<nav class="navbar navbar-expand-lg navbar-custom" aria-label="Offcanvas navbar large">
     <div class="container-fluid">
         <a class="navbar-brand link-light pt-2" href="{{route('homepage')}}"><img src="/images/logo.png" alt="LOGO" class="img-fluid" width="30"> FiveLives</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">

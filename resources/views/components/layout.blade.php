@@ -24,21 +24,10 @@
 <body>
 
     <x-navbar />
-
+    
+    <livewire:assistant />
 
     <div class="min-vh-100">
-
-        @if(session('success'))
-        <script>
-            Swal.fire({
-                icon: 'success',
-                title: '{{ session('
-                success ') }}',
-                showConfirmButton: false,
-                timer: 2000
-            });
-        </script>
-        @endif
 
         {{$slot}}
 
