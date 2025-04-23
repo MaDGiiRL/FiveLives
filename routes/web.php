@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
@@ -14,3 +15,4 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/profile/update-password', [ProfileController::class, 'updatePassword'])->name('profile.updatePassword');
 });
 Route::middleware(['auth'])->get('/profile', [ProfileController::class, 'index'])->name('profile');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');

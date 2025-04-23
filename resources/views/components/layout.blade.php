@@ -22,10 +22,22 @@
 </head>
 
 <body>
+    <livewire:assistant />
 
     <x-navbar />
-    
-    <livewire:assistant />
+    @if (session('success'))
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: '{{ session('
+                success ') }}',
+                confirmButtonColor: '#FFC107'
+            });
+        });
+    </script>
+    @endif
 
     <div class="min-vh-100">
 
@@ -63,6 +75,8 @@
             });
         }
     </script>
+
+
 </body>
 
 </html>
