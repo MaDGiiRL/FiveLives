@@ -38,8 +38,3 @@ Questo sito è stato sviluppato per supportare la community di **FiveLives**, un
 - 🌐 [Sito ufficiale FiveLives](--)
 - 📧 Email contatto: --
 
----
-
-## ©️ Licenza
-
-Questo progetto è rilasciato sotto licenza MIT.
