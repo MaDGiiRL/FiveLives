@@ -13,15 +13,17 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #ff36a3, #dbff00);
+    background: linear-gradient(to bottom, #e40404, #dbff00);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #dbff00, #ff36a3);
+    background: linear-gradient(to bottom, #E0B219, #e40404);
 }
 
 /*Custom*/
+
 a {
     color: #ffc107
 }
@@ -47,6 +49,7 @@ a {
         margin-top: 200px;
     }
 }
+
 .btn-outline-danger {
     --bs-btn-color: #E0B219;
     --bs-btn-border-color: #E0B219;
@@ -80,7 +83,36 @@ a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.border-custom {
+    border-left: 1px dashed #e0b11996;
+}
+
 /*Navabar*/
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: 18px;
+    font-weight: bolder;
+    color: #E0B219;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white;
+    background-color: #E0B219;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: white;
+}
+
+
 .navbar-custom {
     background-color: rgba(0, 0, 0, 0.459);
     padding: 10px 20px;
@@ -230,10 +262,68 @@ a.footer-link:hover {
     }
 }
 
-.formLoginCustom{
+
+/*Form*/
+
+.formLoginCustom {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     padding: 2rem;
     margin-bottom: 2rem;
     color: white;
+}
+
+.contactForm input,
+.contactForm textarea {
+    font-size: 13px;
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(19, 19, 19);
+    background-color: #000;
+    color: #c9c9c9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+    color: #666;
+}
+::placeholder {
+    color: #666!important;
+}
+.form-control:focus {
+    color: #c9c9c9;
+    background-color: #333;
+    border-color: #000;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(0, 0, 0, 0.25);
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #000;
+    background-clip: padding-box;
+    border: 1px solid rgb(19, 19, 19);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.col-color-cumstom {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+
 }

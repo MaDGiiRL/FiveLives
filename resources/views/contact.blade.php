@@ -64,25 +64,7 @@
             }
         }
 
-        .contactForm input,
-        .contactForm textarea {
-            font-size: 18px;
-            width: 100%;
-            display: inline-block;
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid rgb(19, 19, 19);
-            background-color: #000;
-            color: #c9c9c9;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .contactForm input::placeholder,
-        .contactForm textarea::placeholder {
-            color: #666;
-        }
-
+       
         .sparkle-button {
             position: relative;
             display: inline-block;

@@ -26,8 +26,25 @@
 
                 </ul>
                 <div class="pt-md-0 pt-lg-0 pt-3">
+
+                    @guest
                     <a href="{{route('login')}}" class="btn btn-outline-danger me-2">Login</a>
-                    <a href="{{route('register')}}" class="btn btn-outline-danger">Sign-up</a>
+                    <a href="{{route('register')}}" class="btn btn-outline-danger">Register</a>
+                    @endguest
+                    @auth
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('profile')}}">Hi, {{ Auth::user()->name }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button type="submit" class="btn btn-outline-danger">Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+
+                    @endauth
                 </div>
             </div>
         </div>

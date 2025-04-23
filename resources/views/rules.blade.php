@@ -21,30 +21,7 @@
             text-decoration: none;
         }
 
-        .nav-link {
-            display: block;
-            padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-            font-size: 18px;
-            font-weight: bolder;
-            color: #E0B219;
-            text-decoration: none;
-            text-transform: uppercase;
-            background: 0 0;
-            border: 0;
-            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-        }
-
-        .nav-pills .nav-link.active,
-        .nav-pills .show>.nav-link {
-            color: white;
-            background-color: #E0B219;
-        }
-
-        .nav-link:focus,
-        .nav-link:hover {
-            color: white;
-        }
-
+       
         h1,
         h2,
         h3,
