@@ -21,8 +21,8 @@
                     <button class="nav-link active text-start link-light mt-3" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true">
                         <i class="bi bi-person-circle"></i> Account Settings
                     </button>
-                    <button class="nav-link text-start link-light my-3" id="v-pills-articles-tab" data-bs-toggle="pill" data-bs-target="#v-pills-articles" type="button" role="tab" aria-controls="v-pills-articles" aria-selected="false">
-                        <i class="bi bi-pencil-square"></i> Lorem Ipsum
+                    <button class="nav-link text-start link-light my-3" id="v-pills-char-tab" data-bs-toggle="pill" data-bs-target="#v-pills-char" type="button" role="tab" aria-controls="v-pills-char" aria-selected="false">
+                        <i class="bi bi-people"></i> Characters
                     </button>
                     <button class="nav-link text-start link-light my-2" id="v-pills-wishlist-tab" data-bs-toggle="pill" data-bs-target="#v-pills-wishlist" type="button" role="tab" aria-controls="v-pills-wishlist" aria-selected="false">
                         <i class="bi bi-heart-fill"></i> Lorem Ipsum
@@ -30,7 +30,8 @@
                 </div>
             </div>
 
-            <div class="col-md-8  py-5 px-5 border-custom">
+            <div class="col-md-8  px-5 border-custom">
+                
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <h2 class="display-3">Account <span class="text-yellow">Settings</span></h2>
@@ -147,6 +148,14 @@
                             <p class="small text-yellow fw-bold"><span class="text-danger">Warning:</span> This action is permanent. All your data will be removed.</p>
                             <button type="submit" class="btn btn-danger" id="btnDeleteProfile" user_id="{{ Auth::id() }}" csrf_token="{{ csrf_token() }}">Delete Account</button>
                         </section> -->
+                    </div>
+                </div>
+
+                <div class="tab-content" id="v-char-tabContent">
+                    <div class="tab-pane fade show active" id="v-char-profile" role="tabpanel" aria-labelledby="v-char-profile-tab">
+                        <h2 class="display-3">Your <span class="text-yellow">Characters</span></h2>
+                        <p>Check all your characters on FiveLives.</p>
+                          
                     </div>
                 </div>
             </div>

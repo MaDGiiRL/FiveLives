@@ -41,8 +41,15 @@
       <div class="col-12 col-md-6 d-flex flex-column justify-content-between py-5 px-md-5">
         <!-- Titolo in alto -->
         <div class="mb-4 text-start pt-5 pt-md-0 pt-lg-0">
-          <h1 class="fw-bold display-1 text-white">WELCOME TO <span class="text-yellow">FIVELIVES</span></h1>
-          <p class="lead text-light">Your adventure in GTA V RP starts here.</p>
+          <div class="row">
+            <div class="col-3">
+              <img src="/images/logo.png" width="250">
+            </div>
+            <div class="col-9">
+              <h1 class="fw-bold display-1 text-white">WELCOME TO <span class="text-yellow">FIVELIVES</span></h1>
+              <p class="lead text-light">Your adventure in GTA V RP starts here.</p>
+            </div>
+          </div>
         </div>
 
         <!-- Box About sticky in basso -->
