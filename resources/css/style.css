@@ -1,7 +1,5 @@
 body {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
-
 }
 
 body::-webkit-scrollbar {
@@ -34,21 +32,9 @@ a {
     text-align: justify;
 }
 
-@media (min-width: 992px) {
-    .custom-margin {
-        margin-top: 380px;
-    }
-}
-
 .custom-margin2 {
     margin-top: 0;
     text-align: justify;
-}
-
-@media (min-width: 992px) {
-    .custom-margin2 {
-        margin-top: 200px;
-    }
 }
 
 .btn-outline-danger {
@@ -236,15 +222,6 @@ a.footer-link:hover {
     font-size: 18px;
 }
 
-/* Sticky solo da md in su */
-@media (min-width: 768px) {
-    .about-box {
-        position: sticky;
-        bottom: 2rem;
-    }
-}
-
-
 /*Form*/
 .formLoginCustom {
     background: rgba(0, 0, 0, 0.6);
@@ -339,8 +316,6 @@ a.footer-link:hover {
     background-color: #d8001d;
 }
 
-
-
 .assistant-container {
     position: fixed;
     bottom: 30px;
@@ -359,24 +334,6 @@ a.footer-link:hover {
 }
 
 
-@media (max-width: 768px) {
-    .assistant-container {
-        bottom: 20px;
-        right: 20px;
-        width: 90%;
-        max-height: 80%;
-    }
-}
-
-@media (max-width: 480px) {
-    .assistant-container {
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        max-height: 70%;
-    }
-}
 
 .text-ai {
     color: #e0a800
@@ -416,5 +373,76 @@ a.footer-link:hover {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+
+
+/* Mediaqueries */
+@media (max-width: 767.98px) {
+    .logo-mobile {
+        width: 110px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .assistant-container {
+      display: none !important;
+    }
+  }
+
+@media (max-width: 480px) {
+    .assistant-container {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-height: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .custom-margin {
+        margin-top: 380px;
+    }
+}
+
+@media (min-width: 992px) {
+    .custom-margin2 {
+        margin-top: 200px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .about-box {
+        position: sticky;
+        bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .about-box {
+        font-size: 14px
+    }
+
+    .step-title {
+        font-size: 20px;
+    }
+
+    .step-heading {
+        font-size: 1.5rem;
+    }
+
+    .step-desc {
+        font-size: 14px
+    }
+
+    body{
+        font-size: 14px
     }
 }

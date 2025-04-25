@@ -1,3 +1,4 @@
+
 <div class="assistant-widget">
     <!-- Bottone Flottante -->
     <button class="assistant-toggle" wire:click="toggleAssistant">
@@ -10,7 +11,7 @@
         <div class="assistant-container shadow-lg">
             <div class="assistant-box text-white">
                 <div class="assistant-header">
-                    <h5 class="text-white">Five <span class="text-yellow">Lives</span> AI - Meet <span class="text-yellow">Bobby</span>!</h5> <button wire:click="clearChat" class="btn-outline-danger small btn">Delete</button>
+                    <h5 class="text-white">Five <span class="text-yellow">Lives</span> AI - Meet <span class="text-yellow">Bobby</span>!</h5> <button wire:click="clearChat" class="assistant-close"><i class="bi bi-trash3"></i></button>
                     <button class="assistant-close" wire:click="toggleAssistant">✖</button>
                 </div>
                 <div class="assistant-body">

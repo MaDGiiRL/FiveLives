@@ -19,7 +19,7 @@ class Assistant extends Component
         $this->loadMessages();
 
         if (empty($this->messages)) {
-            $this->response = 'Ciao! Se hai bisogno di informazioni su AdVita o qualsiasi altra cosa, sono qui per aiutarti!';
+            $this->response = 'Ciao! Se hai bisogno di informazioni su FiveLives o qualsiasi altra cosa, sono qui per aiutarti!';
         }
     }
 
@@ -41,7 +41,7 @@ class Assistant extends Component
                 [
                     'role' => 'system',
                     'content' => <<<EOT
-Sei Bobby, l'assistente AI del sito AdVita (https://advita.test). Rispondi in italiano in modo chiaro e cordiale.
+Sei Bobby, l'assistente AI del sito FiveLives. Rispondi in italiano in modo chiaro e cordiale.
 
 Quando possibile, includi link HTML cliccabili nelle risposte, come ad esempio:
 <a href=\"http://127.0.0.1:8000/register\">Registrati ora</a>
