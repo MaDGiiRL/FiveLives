@@ -31,8 +31,9 @@
             </div>
 
             <div class="col-md-8  px-5 border-custom">
-                
+
                 <div class="tab-content" id="v-pills-tabContent">
+                    <!-- Account Settings -->
                     <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <h2 class="display-3">Account <span class="text-yellow">Settings</span></h2>
                         <p>Update your account information below.</p>
@@ -149,13 +150,24 @@
                             <button type="submit" class="btn btn-danger" id="btnDeleteProfile" user_id="{{ Auth::id() }}" csrf_token="{{ csrf_token() }}">Delete Account</button>
                         </section> -->
                     </div>
-                </div>
 
-                <div class="tab-content" id="v-char-tabContent">
-                    <div class="tab-pane fade show active" id="v-char-profile" role="tabpanel" aria-labelledby="v-char-profile-tab">
+                    <!-- Characters Panel -->
+                    <div class="tab-pane fade" id="v-pills-char" role="tabpanel" aria-labelledby="v-pills-char-tab">
                         <h2 class="display-3">Your <span class="text-yellow">Characters</span></h2>
-                        <p>Check all your characters on FiveLives.</p>
-                          
+                        <p>Manage or view the characters linked to your account.</p>
+                        <div class="card bg-dark border-light my-3 p-3">
+                            <p class="text-muted">Character system coming soon...</p>
+                        </div>
+                        {{-- Puoi qui inserire una lista di personaggi con ciclo @foreach, se disponibile --}}
+                    </div>
+
+                    <!-- Lorem Ipsum Panel -->
+                    <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel" aria-labelledby="v-pills-wishlist-tab">
+                        <h2 class="display-3"><span class="text-yellow">Lorem</span> Ipsum</h2>
+                        <p>This section is under construction. Stay tuned for updates!</p>
+                        <div class="card bg-dark border-light my-3 p-3">
+                            <p class="text-muted">No content available yet.</p>
+                        </div>
                     </div>
                 </div>
             </div>
