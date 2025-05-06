@@ -10,8 +10,8 @@
     <div class="container custom-margin2">
         <div class="row justify-content-start p-2 mt-md-5">
             <div class="col-md-6 p-4 p-md-5 shadow-lg mt-5 mt-md-0 mt-lg-0 formLoginCustom bg-blur">
-                <h3 class="text-center">🎮 Welcome back to <span class="text-yellow">FiveLives</span>!</h3>
-                <p class="text-center ">Your adventure awaits, let's dive back in!</p>
+                <h3 class="text-center">🎮 Bentornat* su <span class="text-yellow">FiveLives</span>!</h3>
+                <p class="text-center ">La tua avventura ti aspetta!</p>
                 <form method="POST" action="{{ route('login') }}" class="formLogin">
                     @csrf
                     @if ($errors->any())
@@ -32,11 +32,11 @@
                         <input type="password" class="form-control" placeholder="Password" name="password">
                     </div>
                     <div class="my-3 text-center">
-                        <button type="submit" class="btn yellow-button w-100 fs-5">Login</button>
+                        <button type="submit" class="btn yellow-button w-100 fs-5">Accedi</button>
                     </div>
                 </form>
                 <!-- <p class="text-center mt-4">Do you forgot your password? <a class="" href="{{ route('password.request') }}">Recover Password</a></p> -->
-                <p class="text-center mt-4">Don't have an account? <a class="" href="{{route('register')}}">Sign up now and join the adventure!</a></p>
+                <p class="text-center mt-4">Non hai un account? <a class="" href="{{route('register')}}">Registrati!</a></p>
             </div>
         </div>
     </div>

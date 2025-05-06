@@ -16,7 +16,7 @@
 
         .section-subtitle {
             color: white;
-            font-size: 20px
+            font-size: 16px
         }
 
         .sparkle-wrapper {
@@ -31,7 +31,6 @@
             width: 100%;
             height: auto;
             transition: transform 0.3s ease-in-out;
-
         }
 
         .sparkle-wrapper::before {
@@ -110,50 +109,31 @@
             }
         }
     </style>
-
+    <x-navbar />
     <div class="container py-5 mb-5 mt-5">
         <div class="row justify-content-center mb-5 p-2">
             <div class="col-lg-11 mt-5">
                 <div class="row contact-card px-5 p-5 shadow-lg bg-blur">
                     <div class="col-md-5 text-center mt-3 mt-md-0 mt-lg-0 order-md-first order-lg-firsto order-last">
                         <div class="sparkle-wrapper my-5">
-                            <a href="#"><img src="/images/1.png" class="rounded-5 sparkle-img"></a>
+                            <a href="https://discord.gg/kMhzry3nwt"><img src="/images/discord.png" class="rounded-5 sparkle-img"></a>
                         </div>
                         <div class="sparkle-wrapper mb-5">
-                            <a href="#"><img src="/images/2.png" class="rounded-5 sparkle-img"></a>
+                            <a href="https://www.tiktok.com/@fivelivesrp?lang=it-IT"><img src="/images/tiktok.png" class="rounded-5 sparkle-img"></a>
                         </div>
                         <div class="sparkle-wrapper">
-                            <a href="#"><img src="/images/3.png" class="rounded-5 sparkle-img"></a>
+                            <a href="https://www.instagram.com/five_lives_rp/"><img src="/images/instagram.png" class="rounded-5 sparkle-img"></a>
                         </div>
                     </div>
                     <div class="col-md-7">
                         <h1 class="display-1 fw-bold">CONTACT <span class="text-yellow">US</span></h1>
-                        <p class="section-subtitle">We’d love to hear from you. Please use the form below to send us your message or inquiry, and we’ll respond promptly.</p>
+                        <p class="section-subtitle">Se vuoi lasciarci un feedback o hai bisogno di assistenza non esitare a inviarci un messaggio: ti risponderemo al più presto.</p>
 
-                        <form action="{{ route('contact.store') }}" method="POST" class="contactForm">
-                            @csrf
-                            <div class="row g-2">
-                                <div class="col-md-6">
-                                    <input type="text" name="full_name" placeholder="Full name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" name="email" placeholder="Email address" required>
-                                </div>
-                            </div>
-                            <div class="mt-3">
-                                <input type="text" name="subject" placeholder="Subject" required>
-                            </div>
-                            <div class="mt-3">
-                                <textarea name="message" rows="4" placeholder="Message" required></textarea>
-                            </div>
-                            <div class="mt-3">
-                                <button type="submit" class="btn yellow-button w-100">Send Message</button>
-                            </div>
-
-                        </form>
+                        <livewire:contact-form />
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <x-footer />
 </x-layout>

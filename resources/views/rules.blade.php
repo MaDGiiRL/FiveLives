@@ -1,4 +1,4 @@
-<x-layout title="Rules" meta-description="Rules for the game">
+<x-layout title="Regolamento - FiveLives" meta-description="Rules for the game">
     <style>
         body {
             background-image: url(/images/bg_shop\ 1.png);
@@ -11,17 +11,6 @@
             position: relative;
         }
 
-        .scrollspy-nav a.active {
-            font-weight: bold;
-            color: #E0B219;
-        }
-
-        .scrollspy-nav a {
-            color: white;
-            text-decoration: none;
-        }
-
-       
         h1,
         h2,
         h3,
@@ -32,124 +21,129 @@
             font-family: "Outfit", sans-serif;
         }
 
-        .scrollspy-nav a.nav-link {
-            font-size: 13px;
-            text-transform: none;
-            font-weight: 400;
+        .text-yellow {
+            color: #E0B219;
         }
-
-
-        
     </style>
-    </head>
-    <div data-bs-spy="scroll" data-bs-target="#scrollspy-main" data-bs-offset="0" tabindex="0" class="custom-margin" style="text-align: justify">
-        <div class="container py-5">
-            <h1 class="text-uppercase display-1 fw-bold text-white">Community <span class="text-yellow">Rules</span></h1>
-            <p class="lead text-center mb-5">To ensure a safe, enjoyable, and respectful experience, we kindly ask all members to review and follow the server rules below.</p>
-            <div class="row pt-3">
-                <!-- Tabs a sinistra -->
-                <div class="col-md-3 ">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#reg-generale" type="button">Lorem Ipsum</button>
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-roleplay" type="button">Lorem Ipsum</button>
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-azioni" type="button">Lorem Ipsum</button>
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-qor" type="button">Lorem Ipsum</button>
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-5vite" type="button">Lorem Ipsum</button>
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-ems" type="button">Lorem Ipsum</button>
-                    </div>
+    <x-navbar />
+    <div class="container py-5 custom-margin">
+        <div class="row">
+            <div class="col-12 mb-5">
+                <h1 class="text-uppercase display-1 fw-bold text-white mb-4 text-center text-md-start text-lg-start">Regolamento di <span class="text-yellow">FiveLives</span></h1>
+                <p class="lead">
+                    Per garantire un'esperienza sicura, piacevole e rispettosa, chiediamo gentilmente a tutti i membri di leggere e rispettare le regole del server qui sotto.
+                </p>
+            </div>
+            <!-- Tabs Menu -->
+            <div class="col-md-3 col-lg-3 mb-4 ">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#reg-generale" type="button">Generale</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-personaggio" type="button">Personaggio</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-cheat" type="button">Cheating & Exploiting</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-comunicazione" type="button">Comunicazione</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-rp" type="button">Roleplay</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-azioni" type="button">Azioni</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-red" type="button">Zone Rosse</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reg-five" type="button">5 Vite</button>
                 </div>
+            </div>
 
-                <!-- Contenuti a destra -->
-                <div class="col-md-9 pt-md-0 pt-lg-0 pt-5">
-                    <div class="tab-content">
-                        <!-- Regolamento Generale -->
-                        <div class="tab-pane fade show active" id="reg-generale">
-                            <div class="row">
-                                <div class="col-md-3 scrollspy-nav ">
-                                    <nav id="scrollspy-generale" class="nav flex-column">
-                                        <a class="nav-link" href="#gen-1">Lorem Ipsum 1</a>
-                                        <a class="nav-link" href="#gen-2">Lorem Ipsum 2 </a>
-                                        <a class="nav-link" href="#gen-3">Lorem Ipsum 3</a>
-                                    </nav>
-                                </div>
-                                <div class="col-md-9 scroll-area pt-md-0 pt-lg-0 pt-5" data-bs-spy="scroll" data-bs-target="#scrollspy-generale" data-bs-offset="0" tabindex="0">
-                                    <h4 id="gen-1">Lorem Ipsum</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptas inventore sed reprehenderit voluptate doloribus expedita mollitia dolores exercitationem, eos nisi quos possimus explicabo dignissimos, repudiandae temporibus aut, ducimus adipisci. Alias, nisi delectus tenetur quisquam unde dolorum quidem, expedita, voluptate sequi odio rem consectetur exercitationem voluptas commodi. Commodi vitae aperiam, officiis quibusdam eveniet debitis laborum ratione ducimus, omnis veritatis eaque magnam harum iste est dolores porro cum nobis ipsam voluptatem distinctio. Reprehenderit adipisci soluta nam obcaecati. Quod sed ea accusamus debitis eveniet nihil est nostrum laborum cum, numquam error, quas ex voluptatem neque, fugiat facilis tenetur eum itaque! Labore itaque velit, voluptatem reprehenderit quia ad quasi cum sit animi ut veniam omnis sapiente, molestiae nobis saepe aspernatur reiciendis officia. Dolor assumenda vero exercitationem explicabo dolore quaerat autem. Fugiat recusandae excepturi minima ullam veritatis animi dolor, beatae numquam est? Necessitatibus eveniet dolore, doloribus provident enim saepe assumenda a quo maxime. Eos.</p>
+            <!-- Tabs Content -->
+            <div class="col-md-9 col-lg-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- Regolamento Generale -->
+                    <div class="tab-pane fade show active" id="reg-generale" role="tabpanel">
+                        <h2>Regole Generali</h2>
+                        <p>
+                            Su Five Live, abbiamo introdotto il sistema delle 5 vite per promuovere un'esperienza di roleplay più ricca e significativa, incoraggiando i giocatori a riflettere attentamente sulle proprie azioni.
+                            Questo sistema aiuta a evitare comportamenti tossici, poiché ogni perdita di vita ha conseguenze reali, spingendo i giocatori a rispettare maggiormente il contesto e le interazioni con gli altri. Inoltre, limita le azioni impulsive, favorendo decisioni più ponderate che migliorano la qualità del gioco e la coerenza della narrazione. In questo modo, garantiamo un ambiente di gioco più equilibrato e immersivo per tutti.
+                            Vietato nascondere corpi incoscienti/atterrati: per evitare situazioni di abuso e di tossicismo e' severamente vietato spostare i corpi da dove sono atterrati al fine di non farli ritrovare.
+                        </p>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                ❌ Vietato nascondere corpi incoscienti/atterrati: per evitare situazioni di abuso e di tossicismo e' severamente vietato spostare i corpi da dove sono atterrati al fine di non farli ritrovare.
+                            </li>
 
 
-                                    <h4 id="gen-2">Lorem Ipsum</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptas inventore sed reprehenderit voluptate doloribus expedita mollitia dolores exercitationem, eos nisi quos possimus explicabo dignissimos, repudiandae temporibus aut, ducimus adipisci. Alias, nisi delectus tenetur quisquam unde dolorum quidem, expedita, voluptate sequi odio rem consectetur exercitationem voluptas commodi. Commodi vitae aperiam, officiis quibusdam eveniet debitis laborum ratione ducimus, omnis veritatis eaque magnam harum iste est dolores porro cum nobis ipsam voluptatem distinctio. Reprehenderit adipisci soluta nam obcaecati. Quod sed ea accusamus debitis eveniet nihil est nostrum laborum cum, numquam error, quas ex voluptatem neque, fugiat facilis tenetur eum itaque! Labore itaque velit, voluptatem reprehenderit quia ad quasi cum sit animi ut veniam omnis sapiente, molestiae nobis saepe aspernatur reiciendis officia. Dolor assumenda vero exercitationem explicabo dolore quaerat autem. Fugiat recusandae excepturi minima ullam veritatis animi dolor, beatae numquam est? Necessitatibus eveniet dolore, doloribus provident enim saepe assumenda a quo maxime. Eos.</p>
+                            <li>
+                                ❌ Vietato impedire il roleplay dell'EMS: e' severamente vietato mandare via l'EMS o impedire la rianimazione di corpi atterrati nel momento in cui uno scontro a fuoco cessa, questo tipo di comportamento verra' punito severamente.
+                            </li>
 
-                                    <h4 id="gen-3">Lorem Ipsum</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptas inventore sed reprehenderit voluptate doloribus expedita mollitia dolores exercitationem, eos nisi quos possimus explicabo dignissimos, repudiandae temporibus aut, ducimus adipisci. Alias, nisi delectus tenetur quisquam unde dolorum quidem, expedita, voluptate sequi odio rem consectetur exercitationem voluptas commodi. Commodi vitae aperiam, officiis quibusdam eveniet debitis laborum ratione ducimus, omnis veritatis eaque magnam harum iste est dolores porro cum nobis ipsam voluptatem distinctio. Reprehenderit adipisci soluta nam obcaecati. Quod sed ea accusamus debitis eveniet nihil est nostrum laborum cum, numquam error, quas ex voluptatem neque, fugiat facilis tenetur eum itaque! Labore itaque velit, voluptatem reprehenderit quia ad quasi cum sit animi ut veniam omnis sapiente, molestiae nobis saepe aspernatur reiciendis officia. Dolor assumenda vero exercitationem explicabo dolore quaerat autem. Fugiat recusandae excepturi minima ullam veritatis animi dolor, beatae numquam est? Necessitatibus eveniet dolore, doloribus provident enim saepe assumenda a quo maxime. Eos.</p>
 
-                                </div>
-                            </div>
-                        </div>
+                            <li>
+                                🔫 Scontro con armi bianche non comportano la perdita delle vite: qualsiasi arma bianca o scontro a pugni non comporta la perdita di una vita.
+                            </li>
 
-                        <!-- Roleplay -->
-                        <div class="tab-pane fade" id="reg-roleplay">
-                            <div class="row">
-                                <div class="col-md-3 scrollspy-nav">
-                                    <nav id="scrollspy-roleplay" class="nav flex-column">
-                                        <a class="nav-link" href="#rp-1">Lorem Ipsum</a>
-                                        <a class="nav-link" href="#rp-2">Lorem Ipsum</a>
-                                    </nav>
-                                </div>
-                                <div class="col-md-9 scroll-area" data-bs-spy="scroll" data-bs-target="#scrollspy-roleplay" data-bs-offset="0" tabindex="0">
-                                    <h4 id="rp-1">Lorem Ipsum</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid error quo nulla? Rem sequi nam dolores provident nulla reprehenderit tempore suscipit, perspiciatis alias corporis voluptatibus totam at eligendi ipsa odio nisi. Fugit aliquid tempora sed commodi dolorem. Numquam soluta repudiandae blanditiis animi adipisci quasi tenetur totam inventore accusantium laudantium illum nulla neque nobis distinctio dolores facilis beatae suscipit saepe dolorem, quam voluptates aut in pariatur? Sed blanditiis ducimus, deserunt id suscipit odit laudantium, inventore accusamus eligendi, odio fugit? Sequi facere, quod inventore, distinctio dolorem ea iure doloribus ratione dolores molestias recusandae doloremque libero maiores excepturi molestiae perspiciatis vel corporis! Assumenda natus minus cumque, consectetur veniam maxime fugit doloribus, quia corporis ipsum voluptatum cum soluta, veritatis aperiam at nisi molestias rem doloremque totam sit perferendis necessitatibus? Sit quia quae dolores perferendis qui? Blanditiis magnam incidunt natus voluptates ab numquam labore quos, voluptatem, vero velit enim quasi quam alias repellat et?</p>
-                                    <h4 id="rp-2">Lorem Ipsum</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid error quo nulla? Rem sequi nam dolores provident nulla reprehenderit tempore suscipit, perspiciatis alias corporis voluptatibus totam at eligendi ipsa odio nisi. Fugit aliquid tempora sed commodi dolorem. Numquam soluta repudiandae blanditiis animi adipisci quasi tenetur totam inventore accusantium laudantium illum nulla neque nobis distinctio dolores facilis beatae suscipit saepe dolorem, quam voluptates aut in pariatur? Sed blanditiis ducimus, deserunt id suscipit odit laudantium, inventore accusamus eligendi, odio fugit? Sequi facere, quod inventore, distinctio dolorem ea iure doloribus ratione dolores molestias recusandae doloremque libero maiores excepturi molestiae perspiciatis vel corporis! Assumenda natus minus cumque, consectetur veniam maxime fugit doloribus, quia corporis ipsum voluptatum cum soluta, veritatis aperiam at nisi molestias rem doloremque totam sit perferendis necessitatibus? Sit quia quae dolores perferendis qui? Blanditiis magnam incidunt natus voluptates ab numquam labore quos, voluptatem, vero velit enim quasi quam alias repellat et?</p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Azioni -->
-                        <div class="tab-pane fade" id="reg-azioni">
-                            <div class="scroll-area">
-                                <h4 id="az-1">Lorem Ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid error quo nulla? Rem sequi nam dolores provident nulla reprehenderit tempore suscipit, perspiciatis alias corporis voluptatibus totam at eligendi ipsa odio nisi. Fugit aliquid tempora sed commodi dolorem. Numquam soluta repudiandae blanditiis animi adipisci quasi tenetur totam inventore accusantium laudantium illum nulla neque nobis distinctio dolores facilis beatae suscipit saepe dolorem, quam voluptates aut in pariatur? Sed blanditiis ducimus, deserunt id suscipit odit laudantium, inventore accusamus eligendi, odio fugit? Sequi facere, quod inventore, distinctio dolorem ea iure doloribus ratione dolores molestias recusandae doloremque libero maiores excepturi molestiae perspiciatis vel corporis! Assumenda natus minus cumque, consectetur veniam maxime fugit doloribus, quia corporis ipsum voluptatum cum soluta, veritatis aperiam at nisi molestias rem doloremque totam sit perferendis necessitatibus? Sit quia quae dolores perferendis qui? Blanditiis magnam incidunt natus voluptates ab numquam labore quos, voluptatem, vero velit enim quasi quam alias repellat et?</p>
-                                <h4 id="az-2">Lorem Ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid error quo nulla? Rem sequi nam dolores provident nulla reprehenderit tempore suscipit, perspiciatis alias corporis voluptatibus totam at eligendi ipsa odio nisi. Fugit aliquid tempora sed commodi dolorem. Numquam soluta repudiandae blanditiis animi adipisci quasi tenetur totam inventore accusantium laudantium illum nulla neque nobis distinctio dolores facilis beatae suscipit saepe dolorem, quam voluptates aut in pariatur? Sed blanditiis ducimus, deserunt id suscipit odit laudantium, inventore accusamus eligendi, odio fugit? Sequi facere, quod inventore, distinctio dolorem ea iure doloribus ratione dolores molestias recusandae doloremque libero maiores excepturi molestiae perspiciatis vel corporis! Assumenda natus minus cumque, consectetur veniam maxime fugit doloribus, quia corporis ipsum voluptatum cum soluta, veritatis aperiam at nisi molestias rem doloremque totam sit perferendis necessitatibus? Sit quia quae dolores perferendis qui? Blanditiis magnam incidunt natus voluptates ab numquam labore quos, voluptatem, vero velit enim quasi quam alias repellat et?</p>
-                            </div>
-                        </div>
+                            <li>
+                                💥 Esplosioni e cadute da altezze: Esplosioni da/in auto, autocisterne o qualsiasi esplosivo comportano la perdita della vita. (Se viene effettuata un'azione nella quale si viene buttati giù da un'altezza, bisogna presentare le prove allo staff per procedere con la rimozione)
+                            </li>
 
-                        <!-- QoR -->
-                        <div class="tab-pane fade" id="reg-qor">
-                            <div class="scroll-area">
-                                <h4 id="qor-1">Lorem Ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid error quo nulla? Rem sequi nam dolores provident nulla reprehenderit tempore suscipit, perspiciatis alias corporis voluptatibus totam at eligendi ipsa odio nisi. Fugit aliquid tempora sed commodi dolorem. Numquam soluta repudiandae blanditiis animi adipisci quasi tenetur totam inventore accusantium laudantium illum nulla neque nobis distinctio dolores facilis beatae suscipit saepe dolorem, quam voluptates aut in pariatur? Sed blanditiis ducimus, deserunt id suscipit odit laudantium, inventore accusamus eligendi, odio fugit? Sequi facere, quod inventore, distinctio dolorem ea iure doloribus ratione dolores molestias recusandae doloremque libero maiores excepturi molestiae perspiciatis vel corporis! Assumenda natus minus cumque, consectetur veniam maxime fugit doloribus, quia corporis ipsum voluptatum cum soluta, veritatis aperiam at nisi molestias rem doloremque totam sit perferendis necessitatibus? Sit quia quae dolores perferendis qui? Blanditiis magnam incidunt natus voluptates ab numquam labore quos, voluptatem, vero velit enim quasi quam alias repellat et?</p>
-                                <h4 id="qor-2">Lorem Ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid error quo nulla? Rem sequi nam dolores provident nulla reprehenderit tempore suscipit, perspiciatis alias corporis voluptatibus totam at eligendi ipsa odio nisi. Fugit aliquid tempora sed commodi dolorem. Numquam soluta repudiandae blanditiis animi adipisci quasi tenetur totam inventore accusantium laudantium illum nulla neque nobis distinctio dolores facilis beatae suscipit saepe dolorem, quam voluptates aut in pariatur? Sed blanditiis ducimus, deserunt id suscipit odit laudantium, inventore accusamus eligendi, odio fugit? Sequi facere, quod inventore, distinctio dolorem ea iure doloribus ratione dolores molestias recusandae doloremque libero maiores excepturi molestiae perspiciatis vel corporis! Assumenda natus minus cumque, consectetur veniam maxime fugit doloribus, quia corporis ipsum voluptatum cum soluta, veritatis aperiam at nisi molestias rem doloremque totam sit perferendis necessitatibus? Sit quia quae dolores perferendis qui? Blanditiis magnam incidunt natus voluptates ab numquam labore quos, voluptatem, vero velit enim quasi quam alias repellat et?</p>
-                            </div>
-                        </div>
 
-                        <!-- 5 Vite -->
-                        <div class="tab-pane fade" id="reg-5vite">
-                            <div class="scroll-area">
-                                <h4 id="v5-1">Lorem Ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid error quo nulla? Rem sequi nam dolores provident nulla reprehenderit tempore suscipit, perspiciatis alias corporis voluptatibus totam at eligendi ipsa odio nisi. Fugit aliquid tempora sed commodi dolorem. Numquam soluta repudiandae blanditiis animi adipisci quasi tenetur totam inventore accusantium laudantium illum nulla neque nobis distinctio dolores facilis beatae suscipit saepe dolorem, quam voluptates aut in pariatur? Sed blanditiis ducimus, deserunt id suscipit odit laudantium, inventore accusamus eligendi, odio fugit? Sequi facere, quod inventore, distinctio dolorem ea iure doloribus ratione dolores molestias recusandae doloremque libero maiores excepturi molestiae perspiciatis vel corporis! Assumenda natus minus cumque, consectetur veniam maxime fugit doloribus, quia corporis ipsum voluptatum cum soluta, veritatis aperiam at nisi molestias rem doloremque totam sit perferendis necessitatibus? Sit quia quae dolores perferendis qui? Blanditiis magnam incidunt natus voluptates ab numquam labore quos, voluptatem, vero velit enim quasi quam alias repellat et?</p>
-                                <h4 id="v5-2">Lorem Ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid error quo nulla? Rem sequi nam dolores provident nulla reprehenderit tempore suscipit, perspiciatis alias corporis voluptatibus totam at eligendi ipsa odio nisi. Fugit aliquid tempora sed commodi dolorem. Numquam soluta repudiandae blanditiis animi adipisci quasi tenetur totam inventore accusantium laudantium illum nulla neque nobis distinctio dolores facilis beatae suscipit saepe dolorem, quam voluptates aut in pariatur? Sed blanditiis ducimus, deserunt id suscipit odit laudantium, inventore accusamus eligendi, odio fugit? Sequi facere, quod inventore, distinctio dolorem ea iure doloribus ratione dolores molestias recusandae doloremque libero maiores excepturi molestiae perspiciatis vel corporis! Assumenda natus minus cumque, consectetur veniam maxime fugit doloribus, quia corporis ipsum voluptatum cum soluta, veritatis aperiam at nisi molestias rem doloremque totam sit perferendis necessitatibus? Sit quia quae dolores perferendis qui? Blanditiis magnam incidunt natus voluptates ab numquam labore quos, voluptatem, vero velit enim quasi quam alias repellat et?</p>
-                            </div>
-                        </div>
+                            <li>
+                                😨 No Fear Estremo e' motivo di perdita di 1 vita: Situazioni dove si presenta il No Fear Estremo non sono punibili con il permadeath, ma l'azione puo' essere conclusa con la perdita della vita.
+                            </li>
 
-                        <!-- EMS -->
-                        <div class="tab-pane fade" id="reg-ems">
-                            <div class="scroll-area">
-                                <h4 id="ems-1">Lorem Ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid error quo nulla? Rem sequi nam dolores provident nulla reprehenderit tempore suscipit, perspiciatis alias corporis voluptatibus totam at eligendi ipsa odio nisi. Fugit aliquid tempora sed commodi dolorem. Numquam soluta repudiandae blanditiis animi adipisci quasi tenetur totam inventore accusantium laudantium illum nulla neque nobis distinctio dolores facilis beatae suscipit saepe dolorem, quam voluptates aut in pariatur? Sed blanditiis ducimus, deserunt id suscipit odit laudantium, inventore accusamus eligendi, odio fugit? Sequi facere, quod inventore, distinctio dolorem ea iure doloribus ratione dolores molestias recusandae doloremque libero maiores excepturi molestiae perspiciatis vel corporis! Assumenda natus minus cumque, consectetur veniam maxime fugit doloribus, quia corporis ipsum voluptatum cum soluta, veritatis aperiam at nisi molestias rem doloremque totam sit perferendis necessitatibus? Sit quia quae dolores perferendis qui? Blanditiis magnam incidunt natus voluptates ab numquam labore quos, voluptatem, vero velit enim quasi quam alias repellat et?</p>
-                                <h4 id="ems-2">Lorem Ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid error quo nulla? Rem sequi nam dolores provident nulla reprehenderit tempore suscipit, perspiciatis alias corporis voluptatibus totam at eligendi ipsa odio nisi. Fugit aliquid tempora sed commodi dolorem. Numquam soluta repudiandae blanditiis animi adipisci quasi tenetur totam inventore accusantium laudantium illum nulla neque nobis distinctio dolores facilis beatae suscipit saepe dolorem, quam voluptates aut in pariatur? Sed blanditiis ducimus, deserunt id suscipit odit laudantium, inventore accusamus eligendi, odio fugit? Sequi facere, quod inventore, distinctio dolorem ea iure doloribus ratione dolores molestias recusandae doloremque libero maiores excepturi molestiae perspiciatis vel corporis! Assumenda natus minus cumque, consectetur veniam maxime fugit doloribus, quia corporis ipsum voluptatum cum soluta, veritatis aperiam at nisi molestias rem doloremque totam sit perferendis necessitatibus? Sit quia quae dolores perferendis qui? Blanditiis magnam incidunt natus voluptates ab numquam labore quos, voluptatem, vero velit enim quasi quam alias repellat et?</p>
-                            </div>
-                        </div>
+                            <li>
+                                🏝️ Il No fear estremo è anche andare a Cayo Perico senza motivo rp/invito
+                            </li>
+
+
+                            <li>
+                                🛌 E' obbligatorio dopo la perdita di 1 vita, ruolare un periodo di convalescenza di almeno 24h
+                            </li>
+
+                        </ul>
+
+
+
+                    </div>
+
+                    <!-- Personaggio -->
+                    <div class="tab-pane fade" id="reg-personaggio" role="tabpanel">
+                        <h2>Regole Personaggio</h2>
+                        <p>Ogni personaggio deve avere una coerenza narrativa... [contenuto a completare]</p>
+                    </div>
+
+                    <!-- Cheating -->
+                    <div class="tab-pane fade" id="reg-cheat" role="tabpanel">
+                        <h2>Cheating & Exploiting</h2>
+                        <p>Uso di cheat, exploit, bug abuse è severamente vietato. Segnalazioni verranno trattate con il massimo rigore.</p>
+                    </div>
+
+                    <!-- Comunicazione -->
+                    <div class="tab-pane fade" id="reg-comunicazione" role="tabpanel">
+                        <h2>Comunicazione</h2>
+                        <p>Rispetto tra i giocatori, niente insulti OOC o linguaggio tossico. L'uso di comunicazioni esterne deve rispettare l'immersione RP.</p>
+                    </div>
+
+                    <!-- Roleplay -->
+                    <div class="tab-pane fade" id="reg-rp" role="tabpanel">
+                        <h2>Regole di Roleplay</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid error quo nulla?</p>
+                    </div>
+
+                    <!-- Azioni -->
+                    <div class="tab-pane fade" id="reg-azioni" role="tabpanel">
+                        <h2>Regole sulle Azioni</h2>
+                        <p>Le azioni devono sempre rispettare le regole del buon senso RP... [contenuto a completare]</p>
+                    </div>
+
+                    <!-- Zone Rosse -->
+                    <div class="tab-pane fade" id="reg-red" role="tabpanel">
+                        <h2>Zone Rosse</h2>
+                        <p>Zone ad alto rischio devono essere segnalate. Nessun spawn kill o abuso di location.</p>
+                    </div>
+
+                    <!-- 5 Vite -->
+                    <div class="tab-pane fade" id="reg-five" role="tabpanel">
+                        <h2>Sistema delle 5 Vite</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quis laboriosam non nam cumque tempore nulla quam. Fugit enim dolor voluptatem? Quod enim nulla distinctio autem a dolores. Sunt odio eius animi sint, quasi maiores quam, nisi expedita sequi fugit laudantium corrupti voluptatem mollitia sed! Distinctio nesciunt fugiat in et!</p>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
-
+    <x-footer />
 </x-layout>

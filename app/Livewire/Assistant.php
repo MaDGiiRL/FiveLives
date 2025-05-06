@@ -48,29 +48,35 @@ Quando possibile, includi link HTML cliccabili nelle risposte, come ad esempio:
 
 Ecco come rispondere a queste domande:
 
-- **Come faccio a trovare un lavoro nel server?**:  
-  Per trovare un lavoro, apri il menu interazioni (di solito premendo F6 o un tasto personalizzato dal server) e vai alla sezione "Agenzia del Lavoro". Lì puoi scegliere tra i lavori disponibili come meccanico, tassista, poliziotto o altri personalizzati da FivesLives.
+- **Si può lootare un player?**:  
+  Dipende! Ovviamente come ben sai sono vietate le azioni a scopo di loot, ma in determinate situazioni come nelle zone rosse, il loot potrebbe essere ammesso verso le FDO
 
-- **Dove si fa la patente nel server?**:  
-  La patente si ottiene andando alla scuola guida. Puoi trovare la sua posizione sulla mappa con l'icona di un volante. Una volta lì, segui le istruzioni dell'NPC per completare l’esame teorico e pratico.
+- **Posso portare un secondo personaggio?**:  
+  Il secondo personaggio di per sè è una rottura dell'rp, ma può essere assegnato in determinate situazioni, ha delle regole molto particolari e specifiche per poter esistere.
 
-- **Come si guadagnano soldi velocemente?**:  
-  Alcuni dei modi più rapidi per guadagnare sono: fare il corriere, consegnare pacchi, oppure partecipare a eventi organizzati dallo staff. Ma attenzione: le attività illegali come lo spaccio o le rapine rendono di più, ma comportano rischi elevati!
+- **Cosa devo avere per andare in assistenza?**:  
+  Per poter far valere la tua in assistenza devi avere una qualsiasi forma di videocamera sul corpo (vedi telefono, bodycam, dashacam ecc), quindi avere una clip dell'azione da contestare o del torto ricevuto
 
-- **Posso comprare una casa su FivesLives?**:  
-  Sì, certo! Puoi acquistare case tramite l’agenzia immobiliare in città o direttamente da altri giocatori. Avvicinati a una casa disponibile e segui le istruzioni sullo schermo per comprarla, se hai i soldi necessari.
+- **Come ricevo assistenza tecnica o di gioco?**:  
+  Per qualsiasi tipologia di asssitenza basterà recarsi nella stanza vocale "attesa assistenza" sul discord, dopo ave correttametne compilato il modulo assistenza, sempre sul suddetto discord
 
-- **Il mio personaggio è bloccato, cosa posso fare?**:  
-  Prova a fare /unstuck o a disconnetterti e riconnetterti. Se il problema persiste, apri un ticket sul Discord ufficiale o usa il supporto live del sito FivesLives per ricevere aiuto.
+- **Cosa posso fare se il mio roleplay è bloccato?**:  
+  Per un qualsiasi consiglio roleplay potrai sempre recarti in assistenza.
 
-- **Posso unirmi a una gang o a un’organizzazione criminale?**:  
-  Sì, ma serve l’approvazione da parte dello staff o il contatto in-game con un membro di una gang esistente. Una volta dentro, potrai partecipare a missioni esclusive e guadagnare con attività illecite.
+- **Cosa succede se sono stato bannato?**:  
+ In caso di un ban momentaneo basterà attendere la scadenza, in caso invece di ban permanente si potrà richiedere una rivalutazione, in caso contrario non sarà mai più ammesso l'accesso al server.
 
-- **Come si ottengono i veicoli personali?**:  
- Puoi acquistare veicoli dal concessionario o da altri giocatori. Una volta comprati, saranno salvati nel tuo garage personale e potrai usarli ogni volta che entri nel server.
+- **Cosa posso fare se ho trovato un bug/glitch?**:  
+ In questo caso ti basterà aprire un ticket nel nostro discord e ci prenderemo cura della situazione.
 
-- **Cosa succede se vengo arrestato dalla polizia?**:  
-  Se vieni arrestato, verrai portato in centrale. Un ufficiale ti farà l’interrogatorio e poi sarai processato. A seconda del crimine, potresti ricevere una multa, del tempo in prigione o entrambe le cose.
+- **In quale momento è ammesso sparare ad un altro giocatore?**:  
+  Sicuramente questa domanda richiede varie specificazioni, dipende dalla situazione in cui ti trovi, e dal ruolo che ricopri (FDO, civile o criminale) per questa domanda ti consiglio una rilettura del regolamento sopratutto regolametni azioni, ingaggio e personaggio
+
+  -**Se sono un medico posso compiere azioni illegali?**:
+Un medico di norma non può mai compiere azioni illegali
+
+-**Posso interrompere il lavoro di un medico?**:
+No la rianimazione di un giocatore non è mai passibile di interruzione
 
   - **Ho altre domande**:  
   Non esitare a contattare il <a href=\"http://127.0.0.1:8000/contact\">Servizio Clienti</a> .

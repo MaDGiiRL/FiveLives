@@ -10,8 +10,8 @@
     <div class="container custom-margin2">
         <div class="row justify-content-end p-2 mt-md-5">
             <div class="col-md-6 p-4 p-md-5 shadow-lg mt-5 mt-md-0 mt-lg-0 formLoginCustom bg-blur">
-                <h3 class="text-center">🎮 Welcome to <span class="text-yellow">FiveLives</span>!</h3>
-                <p class="text-center ">Register to step into your second life. Your adventure starts here!</p>
+                <h3 class="text-center">🎮 Benvenut* su <span class="text-yellow">FiveLives</span>!</h3>
+                <p class="text-center ">Registrati per iniziare la tua nuova vita!</p>
                 <form method="POST" action="{{ route('register') }}" class="formRegister">
                             @csrf
                             @if ($errors->any())
@@ -24,7 +24,7 @@
                             </div>
                             @endif
                             <div class="mb-3">
-                                <label class="form-label small">Full Name</label>
+                                <label class="form-label small">Nome</label>
                                 <input type="text" class="form-control" placeholder="Name" name="name">
                             </div>
                             <div class="mb-3">
@@ -36,15 +36,15 @@
                                 <input type="password" class="form-control" placeholder="Password" name="password">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label small">Confirm Password</label>
+                                <label class="form-label small">Conferma Password</label>
                                 <input type="password" class="form-control" placeholder="Confirm Password" name="password_confirmation">
                             </div>
                             <div class="my-3 text-center">
-                                <button type="submit" class="btn yellow-button w-100 fs-5">Register</button>
+                                <button type="submit" class="btn yellow-button w-100 fs-5">Registrati</button>
                             </div>
                         </form>
                 
-                <p class="text-center mt-4">Do you have an account? <a class="" href="{{route('login')}}">Log in to continue.</a></p>
+                <p class="text-center mt-4">Hai un account? <a class="" href="{{route('login')}}">Accedi</a></p>
             </div>
         </div>
     </div>

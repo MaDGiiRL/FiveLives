@@ -15,13 +15,13 @@
                         <a class="nav-link" href="{{route('homepage')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('connect')}}">How To Connect</a>
+                        <a class="nav-link" href="{{route('connect')}}">Connettiti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('rules')}}">Rules</a>
+                        <a class="nav-link" href="{{route('rules')}}">Regolamento</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
+                        <a class="nav-link" href="{{route('contact')}}">Contattaci</a>
                     </li>
 
                 </ul>
@@ -34,7 +34,7 @@
                     @auth
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('profile')}}">Hi, {{ Auth::user()->name }}</a>
+                            <a class="nav-link" href="{{route('profile')}}">Ciao, {{ Auth::user()->name }}</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" onclick="confirmLogout(event)" class="btn btn-outline-danger mt-1">Logout</a>

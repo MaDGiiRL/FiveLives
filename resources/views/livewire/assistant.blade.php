@@ -1,4 +1,3 @@
-
 <div class="assistant-widget">
     <!-- Bottone Flottante -->
     <button class="assistant-toggle" wire:click="toggleAssistant">
@@ -37,7 +36,7 @@
                             {!! $response !!}
                         </div>
                         @else
-                        <p class="text-white">Chat is empty! 😄</p>
+                        <p class="text-white">La chat è vuota! 😄</p>
                         @endif
                     </div>
                 </div>
