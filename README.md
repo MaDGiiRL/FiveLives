@@ -19,7 +19,7 @@ Benvenuti nel repository ufficiale del **Portale Web di FiveLives**, un sito ded
 
 ## 🛠️ Stack Tecnologico
 
-- **Backend**: Laravel 10+
+- **Backend**: Laravel 12
 - **Frontend**: HTML5, CSS3, Bootstrap 5
 - **Database**: MySQL
 - **Extra**: AOS, SweetAlert2, (futura integrazione con OpenAI per assistente AI)
