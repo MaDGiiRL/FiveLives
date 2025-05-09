@@ -387,9 +387,9 @@ a.footer-link:hover {
 
 @media (max-width: 767.98px) {
     .assistant-container {
-      display: none !important;
+        display: none !important;
     }
-  }
+}
 
 @media (max-width: 480px) {
     .assistant-container {
@@ -427,7 +427,8 @@ a.footer-link:hover {
         font-size: 14px
     }
 
-    .step-title, .section-title {
+    .step-title,
+    .section-title {
         font-size: 20px;
     }
 
@@ -439,7 +440,14 @@ a.footer-link:hover {
         font-size: 14px
     }
 
-    body{
+    body {
         font-size: 14px
     }
+}
+
+
+.navbar {
+    --bs-navbar-brand-hover-color: white;
+    --bs-navbar-toggler-icon-bg: url(/public/images/1.png);
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.336);
 }
