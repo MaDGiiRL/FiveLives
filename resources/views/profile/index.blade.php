@@ -8,11 +8,6 @@
             background-position: center;
         }
 
-        .section {
-            padding: 100px 0;
-            position: relative;
-        }
-
         img {
             max-width: 100%;
         }
@@ -89,118 +84,215 @@
             color: white;
         }
 
-        .social-icons {
-            padding: 50px;
-            text-align: center;
-        }
 
         .social-icons a {
-            color: #fff;
-            line-height: 30px;
-            font-size: 50px;
-            margin: 0 5px;
-            text-decoration: none;
-            line-height: 30px;
-            font-size: 50px;
-            transition: all 200ms ease-in;
+            border-radius: 50px;
+            color: #3f345f;
+            display: inline-block;
+            line-height: 52px;
+            height: 50px;
+            width: 50px;
+            box-shadow: 0 5px 25px rgba(93, 70, 232, 0.15);
+            margin: 15px 15px;
+            font-size: 22px;
         }
 
-        .social-icons a:hover {
-            color: #E0B219;
+        a {
+            text-decoration: none !important;
+            color: #3f345f;
+            transition: all 0.3s ease 0s;
+        }
+
+        .slider-nav-item:before {
+            position: absolute;
+            content: "";
+            height: calc(100% + 16px);
+            width: calc(100% + 16px);
+            top: -8px;
+            left: -8px;
+            border-radius: 50%;
+            border: 1px solid rgba(132, 132, 164, 0.35);
+            animation: 1.5s linear 0s normal none infinite focuse;
+        }
+
+
+
+        /*socil*/
+        .slider-nav {
+            display: flex;
+        }
+
+        .process-scetion .slider-nav-item {
+            position: relative;
+            flex-grow: 0;
+            flex-shrink: 0;
+            border-radius: 50%;
+            text-align: center;
+            background: #fff;
+            cursor: pointer;
+            transition: all .4s ease;
+
+        }
+
+        .slider-nav-item:before {
+            position: absolute;
+            content: "";
+            height: calc(100% + 16px);
+            width: calc(100% + 16px);
+            top: -8px;
+            left: -8px;
+            border-radius: 50%;
+            border: 1px solid rgba(132, 132, 164, 0.35);
+            animation: 1.5s linear 0s normal none infinite focuse;
+        }
+
+        .process-scetion .slider-nav-item:nth-child(2) {
+            color: #40beff;
+        }
+
+        .process-scetion .slider-nav-item:nth-child(3) {
+            color: #311f9b;
+        }
+
+        .process-scetion .slider-nav-item:nth-child(4) {
+            color: #ff9259;
+        }
+
+        .process-scetion .slider-nav-item:nth-child(5) {
+            color: #38385f;
+        }
+
+
+        .process-scetion .slider-nav-item .ikon {
+            font-size: 50px;
+            line-height: 80px;
+        }
+
+        .shadow-img1 {
+            background-image: url("../img/shadow.png");
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        .shadow-img2 {
+            background-position: bottom;
+            background-image: url("../img/shadow2.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+
+        @media only screen and (max-width: 300px) {
+            .process-scetion .slider-nav-item {
+                height: 30px;
+                width: 30px;
+            }
         }
     </style>
 
     <x-sidebar />
 
-    <div class="content py-3">
+    <div class="content py-md-3 py-lg-3">
         <div class="container">
-            <div class="row p-md-5 p-lg-5 p-2 justify-content-center">
-                <div class="col-md-10 col-color-cumstom bg-blur px-5">
+            <div class="row p-md-5 p-lg-5 p-1 justify-content-center">
+                <div class="col-md-10 col-color-cumstom bg-blur px-md-5 px-lg-5">
                     <div class="tab-content" id="v-pills-tabContent">
                         <!-- Account -->
                         <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                             <section class="section about-section gray-bg" id="about">
                                 <div class="container">
                                     <div class="row align-items-center justify-content-around mb-4">
-                                        <div class="col-9">
+                                        <div class="col-md-4 col-lg-4">
                                             <h2 class="display-3"><span class="text-yellow">A</span>ccount</h2>
                                         </div>
-                                        <div class="col-3">
-                                            <a href="{{route('homepage')}}" class="btn btn-outline-danger"> Torna Indietro</a>
+                                        <div class="col-md-4 col-lg-4">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <form action="{{ route('logout') }}" method="POST">
+                                                        @csrf
+                                                        <button type="submit" class="btn btn-danger">Logout <i class="bi bi-box-arrow-right"></i></button>
+                                                    </form>
+
+                                                </div>
+                                                <div class="col-7">
+                                                    <a href="{{route('homepage')}}" class="btn btn-outline-danger"> Torna Indietro</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row align-items-center flex-row-reverse">
                                         <div class="col-lg-6">
-                                            <div class="about-text go-to">
-                                                <h3 class="dark-color">About Me</h3>
-                                                <p class="small">{{ $user->bio }}</p>
-                                                <div class="row about-list">
-                                                    <div class="col-md-6">
-                                                        <div class="media">
-                                                            <label>Nat* il</label>
-                                                            <p>{{ $user->birth_date }}</p>
+                                            <section class="trial-block shadow3">
+                                                <div class="about-text go-to">
+                                                    <h3 class="dark-color">About Me</h3>
+                                                    <p class="small">{{ $user->bio }}</p>
+                                                    <div class="row about-list">
+                                                        <div class="col-md-6">
+                                                            <div class="media">
+                                                                <label>Nat* il</label>
+                                                                <p>{{ $user->birth_date }}</p>
+                                                            </div>
+                                                            <div class="media">
+                                                                <label>Luogo</label>
+                                                                <p>{{ $user->residence }}</p>
+                                                            </div>
                                                         </div>
-                                                        <div class="media">
-                                                            <label>Luogo</label>
-                                                            <p>{{ $user->residence }}</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="media">
-                                                            <label>E-mail</label>
-                                                            <p>{{ $user->email }}</p>
-                                                        </div>
-                                                        <div class="media">
-                                                            <label>Phone</label>
-                                                            <p>{{ $user->phone }}</p>
+                                                        <div class="col-md-6">
+                                                            <div class="media">
+                                                                <label>E-mail</label>
+                                                                <p>{{ $user->email }}</p>
+                                                            </div>
+                                                            <div class="media">
+                                                                <label>Phone</label>
+                                                                <p>{{ $user->phone }}</p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="about-avatar">
                                                 <img src="{{ Auth::user()->profile_image ? asset('storage/' . Auth::user()->profile_image) : '/images/logo.png' }}"
                                                     class="img-fluid"
-                                                    style="width: 440px; height: 400px; object-fit: cover; border-radius: 10px;">
+                                                    style="width: 440px; height: 300px; object-fit: cover; border-radius: 10px;">
+                                            </div>
+                                            <div class="social-overlap process-scetion pt-3">
+                                                <div class="container">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="social-bar">
+                                                                <div class="social-icons mb-3 iconpad text-center">
+                                                                    <a href="{{ $user->facebook }}" title="facebook" class="slider-nav-item">
+                                                                        <i class="bi bi-facebook"></i>
+                                                                    </a>
+                                                                    <a href="{{ $user->instagram }}" title="instagram" class="slider-nav-item">
+                                                                        <i class="bi bi-instagram"></i>
+                                                                    </a>
+
+                                                                    <a href="{{ $user->twitch }}" title="twitch" class="slider-nav-item">
+                                                                        <i class="bi bi-twitch"></i>
+                                                                    </a>
+                                                                    <a href="#" title="{{ $user->github }}" class="slider-nav-item">
+                                                                        <i class="bi bi-github"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="counter">
-                                        <div class="row">
-                                            <div class="social-icons">
-                                                <a href="#" title="facebook">
-                                                    <i class="bi bi-facebook" aria-hidden="true"></i>
-                                                </a>
-                                                <a href="#" title="instagram">
-                                                    <i class="bi bi-instagram" aria-hidden="true"></i>
-                                                </a>
-                                                <a href="#" title="youtube">
-                                                    <i class="fa fa-youtube-square" aria-hidden="true"></i>
-                                                </a>
-                                                <a href="#" title="twitch">
-                                                    <i class="bi bi-twitch" aria-hidden="true"></i>
-                                                </a>
-                                                <a href="#" title="github">
-                                                    <i class="bi bi-github" aria-hidden="true"></i>
-                                                </a>
-                                                <a href="#" title="discord">
-                                                    <i class="bi bi-discord" aria-hidden="true"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </section>
                         </div>
 
                         <!-- Settings -->
                         <div class="tab-pane fade" id="v-pills-char" role="tabpanel" aria-labelledby="v-pills-char-tab">
                             <div class="row align-items-center justify-content-around mb-4">
-                                <div class="col-9">
+                                <div class="col-md-9 col-lg-9">
                                     <h2 class="display-3"><span class="text-yellow">I</span>mpostazioni</h2>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-md-3 col-lg-3">
                                     <a href="{{route('homepage')}}" class="btn btn-outline-danger"> Torna Indietro</a>
                                 </div>
                             </div>
@@ -279,11 +371,6 @@
                                     <div class="mb-3">
                                         <label class="form-label small">Github</label>
                                         <input type="text" name="github" class="form-control" placeholder="https://github.com/you_profile" value="{{ old('github', Auth::user()->github) }}">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label class="form-label small">Discord</label>
-                                        <input type="text" name="discord" class="form-control" placeholder="https://discord.com/you_profile" value="{{ old('discord', Auth::user()->discord) }}">
                                     </div>
 
                                     <button type="submit" class="btn btn-outline-danger">Salva Profilo</button>

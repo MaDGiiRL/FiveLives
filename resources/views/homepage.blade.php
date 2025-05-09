@@ -43,7 +43,7 @@
         <div class="mb-4 text-start pt-5 pt-md-0 pt-lg-0">
           <div class="row align-items-center">
             <div class="col-3">
-              <img src="/images/logo.png" class="logo-mobile" width="250">
+              <img src="/images/logo.png" class="logo-mobile" width="200">
             </div>
             <div class="col-9">
               <h1 class="fw-bold display-md-1 display-lg-1 display-2 text-white">BENVENUTI SU <span class="text-yellow">FIVELIVES</span></h1>

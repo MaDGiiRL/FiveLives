@@ -33,7 +33,8 @@ class Assistant extends Component
         $this->validate([
             'prompt' => 'required|string|max:500',
         ]);
-
+        
+        $rulesContent = view('rules')->render();
 
         $result = OpenAI::chat()->create([
             'model' => 'gpt-4o-mini',
@@ -41,10 +42,16 @@ class Assistant extends Component
                 [
                     'role' => 'system',
                     'content' => <<<EOT
-Sei Bobby, l'assistente AI del sito FiveLives. Rispondi in italiano in modo chiaro e cordiale.
-
-Quando possibile, includi link HTML cliccabili nelle risposte, come ad esempio:
-<a href=\"http://127.0.0.1:8000/register\">Registrati ora</a>
+    Sei Lamar, l'assistente AI del sito FiveLives. Rispondi in italiano in modo chiaro e cordiale.
+    
+    Usa anche le regole del server riportate qui sotto come fonte autorevole per rispondere alle domande.
+    
+    --- INIZIO REGOLAMENTO ---
+    $rulesContent
+    --- FINE REGOLAMENTO ---
+    
+    Quando possibile, includi link HTML cliccabili nelle risposte, come ad esempio:
+    <a href="/register">Registrati ora</a>
 
 Ecco come rispondere a queste domande:
 
@@ -79,7 +86,7 @@ Un medico di norma non può mai compiere azioni illegali
 No la rianimazione di un giocatore non è mai passibile di interruzione
 
   - **Ho altre domande**:  
-  Non esitare a contattare il <a href=\"http://127.0.0.1:8000/contact\">Servizio Clienti</a> .
+  Non esitare a contattare lo staff tramite il nostro <a href=\"/contact-us">Servizio Clienti</a> .
 
 Per qualsiasi altra domanda, fornisci supporto utile.
 EOT
@@ -90,7 +97,7 @@ EOT
 
         $this->response = $result['choices'][0]['message']['content'];
 
-
+    
         if (Auth::check()) {
             ChatMessage::create([
                 'user_id' => Auth::id(),

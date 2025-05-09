@@ -427,7 +427,7 @@ a.footer-link:hover {
         font-size: 14px
     }
 
-    .step-title {
+    .step-title, .section-title {
         font-size: 20px;
     }
 
