@@ -8,13 +8,10 @@
         <h1 class="text-center">Hi,<span class="text-yellow"> {{ Auth::user()->name }}</span></h1>
         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <button class="nav-link active text-start link-light mt-3" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true">
-                <i class="bi bi-person-circle"></i> Impostazioni
+                <i class="bi bi-person"></i> Account
             </button>
             <button class="nav-link text-start link-light my-3" id="v-pills-char-tab" data-bs-toggle="pill" data-bs-target="#v-pills-char" type="button" role="tab" aria-controls="v-pills-char" aria-selected="false">
-                <i class="bi bi-people"></i> Personaggi
-            </button>
-            <button class="nav-link text-start link-light my-2" id="v-pills-wishlist-tab" data-bs-toggle="pill" data-bs-target="#v-pills-wishlist" type="button" role="tab" aria-controls="v-pills-wishlist" aria-selected="false">
-                <i class="bi bi-heart-fill"></i> Lorem Ipsum
+                <i class="bi bi-person-gear"></i> Impostazioni
             </button>
         </div>
     </div>
@@ -22,21 +19,13 @@
 
     <!-- Sidebar fissa per Desktop -->
     <div class="sidebar-fixed d-none d-md-block col-color-cumstom bg-blur text-white p-3">
-        <div class="text-center mb-5">
-            <img src="{{ Auth::user()->profile_image ? asset('storage/' . Auth::user()->profile_image) : '/images/logo.png' }}"
-                class="img-fluid"
-                style="width: 250px; height: 250px; object-fit: cover; border-radius: 10px;">
-        </div>
-        <h1 class="text-center">Hi,<span class="text-yellow"> {{ Auth::user()->name }}</span></h1>
+        <h3 class="text-center mt-5">Hi,<span class="text-yellow"> {{ Auth::user()->name }}</span></h3>
         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <button class="nav-link active text-start link-light mt-3" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true">
-                <i class="bi bi-person-circle"></i> Impostazioni
+                <i class="bi bi-person"></i> Account
             </button>
             <button class="nav-link text-start link-light my-3" id="v-pills-char-tab" data-bs-toggle="pill" data-bs-target="#v-pills-char" type="button" role="tab" aria-controls="v-pills-char" aria-selected="false">
-                <i class="bi bi-people"></i> Personaggi
-            </button>
-            <button class="nav-link text-start link-light my-2" id="v-pills-wishlist-tab" data-bs-toggle="pill" data-bs-target="#v-pills-wishlist" type="button" role="tab" aria-controls="v-pills-wishlist" aria-selected="false">
-                <i class="bi bi-heart-fill"></i> Lorem Ipsum
+                <i class="bi bi-person-gear"></i> Impostazioni
             </button>
         </div>
     </div>

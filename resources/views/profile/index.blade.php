@@ -7,6 +7,107 @@
             background-attachment: fixed;
             background-position: center;
         }
+
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+
+        /* About Me 
+---------------------*/
+        .about-text h3 {
+            font-size: 45px;
+            font-weight: 700;
+            margin: 0 0 6px;
+        }
+
+        @media (max-width: 767px) {
+            .about-text h3 {
+                font-size: 35px;
+            }
+        }
+
+        .about-text h6 {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 767px) {
+            .about-text h6 {
+                font-size: 18px;
+            }
+        }
+
+        .about-text p {
+            font-size: 14px;
+            max-width: 450px;
+        }
+
+        .about-text p mark {
+            font-weight: 600;
+            color: white;
+        }
+
+        .about-list {
+            padding-top: 10px;
+        }
+
+        .about-list .media {
+            padding: 5px 0;
+        }
+
+        .about-list label {
+            color: white;
+            font-weight: 600;
+            width: 88px;
+            margin: 0;
+            position: relative;
+        }
+
+
+        .about-list p {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        @media (max-width: 991px) {
+            .about-avatar {
+                margin-top: 30px;
+            }
+        }
+
+        .dark-color {
+            color: white;
+        }
+
+        .social-icons {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            color: #fff;
+            line-height: 30px;
+            font-size: 50px;
+            margin: 0 5px;
+            text-decoration: none;
+            line-height: 30px;
+            font-size: 50px;
+            transition: all 200ms ease-in;
+        }
+
+        .social-icons a:hover {
+            color: #E0B219;
+        }
     </style>
 
     <x-sidebar />
@@ -14,16 +115,93 @@
     <div class="content py-3">
         <div class="container">
             <div class="row p-md-5 p-lg-5 p-2 justify-content-center">
-                <div class="col-md-10 col-color-cumstom bg-blur  px-5">
+                <div class="col-md-10 col-color-cumstom bg-blur px-5">
                     <div class="tab-content" id="v-pills-tabContent">
-                        <!-- Account Settings -->
+                        <!-- Account -->
                         <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <section class="section about-section gray-bg" id="about">
+                                <div class="container">
+                                    <div class="row align-items-center justify-content-around mb-4">
+                                        <div class="col-9">
+                                            <h2 class="display-3"><span class="text-yellow">A</span>ccount</h2>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="{{route('homepage')}}" class="btn btn-outline-danger"> Torna Indietro</a>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center flex-row-reverse">
+                                        <div class="col-lg-6">
+                                            <div class="about-text go-to">
+                                                <h3 class="dark-color">About Me</h3>
+                                                <p class="small">{{ $user->bio }}</p>
+                                                <div class="row about-list">
+                                                    <div class="col-md-6">
+                                                        <div class="media">
+                                                            <label>Nat* il</label>
+                                                            <p>{{ $user->birth_date }}</p>
+                                                        </div>
+                                                        <div class="media">
+                                                            <label>Luogo</label>
+                                                            <p>{{ $user->residence }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="media">
+                                                            <label>E-mail</label>
+                                                            <p>{{ $user->email }}</p>
+                                                        </div>
+                                                        <div class="media">
+                                                            <label>Phone</label>
+                                                            <p>{{ $user->phone }}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="about-avatar">
+                                                <img src="{{ Auth::user()->profile_image ? asset('storage/' . Auth::user()->profile_image) : '/images/logo.png' }}"
+                                                    class="img-fluid"
+                                                    style="width: 440px; height: 400px; object-fit: cover; border-radius: 10px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="counter">
+                                        <div class="row">
+                                            <div class="social-icons">
+                                                <a href="#" title="facebook">
+                                                    <i class="bi bi-facebook" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" title="instagram">
+                                                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" title="youtube">
+                                                    <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" title="twitch">
+                                                    <i class="bi bi-twitch" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" title="github">
+                                                    <i class="bi bi-github" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" title="discord">
+                                                    <i class="bi bi-discord" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Settings -->
+                        <div class="tab-pane fade" id="v-pills-char" role="tabpanel" aria-labelledby="v-pills-char-tab">
                             <div class="row align-items-center justify-content-around mb-4">
                                 <div class="col-9">
-                                    <h2 class="display-3"><span class="text-yellow">A</span>ccount</h2>
+                                    <h2 class="display-3"><span class="text-yellow">I</span>mpostazioni</h2>
                                 </div>
                                 <div class="col-3">
-                                <a href="{{route('homepage')}}" class="btn btn-outline-danger"> Torna Indietro</a>
+                                    <a href="{{route('homepage')}}" class="btn btn-outline-danger"> Torna Indietro</a>
                                 </div>
                             </div>
                             <p>Modifica le imposazioni del tuo profilo.</p>
@@ -94,21 +272,24 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <label class="form-label small">LinkedIn</label>
-                                        <input type="text" name="linkedin" class="form-control" placeholder="https://linkedin.com/in/your_profile" value="{{ old('linkedin', Auth::user()->linkedin) }}">
+                                        <label class="form-label small">Twitch</label>
+                                        <input type="text" name="twitch" class="form-control" placeholder="https://twitch.com/in/your_profile" value="{{ old('twitch', Auth::user()->twitch) }}">
                                     </div>
 
                                     <div class="mb-3">
-                                        <label class="form-label small">WhatsApp</label>
-                                        <input type="text" name="whatsapp" class="form-control" placeholder="https://wa.me/39xxxxxxxxxx" value="{{ old('whatsapp', Auth::user()->whatsapp) }}">
+                                        <label class="form-label small">Github</label>
+                                        <input type="text" name="github" class="form-control" placeholder="https://github.com/you_profile" value="{{ old('github', Auth::user()->github) }}">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label small">Discord</label>
+                                        <input type="text" name="discord" class="form-control" placeholder="https://discord.com/you_profile" value="{{ old('discord', Auth::user()->discord) }}">
                                     </div>
 
                                     <button type="submit" class="btn btn-outline-danger">Salva Profilo</button>
                                 </form>
                             </section>
-
                             <hr>
-
                             <section id="change-password" class="content-section mt-2 pt-3">
                                 <h2 class="display-3"> <span class="text-yellow">Pass</span>word</h2>
                                 <p>Aggiorna la tua password.</p>
@@ -131,38 +312,10 @@
                                     <button type="submit" class="btn btn-outline-danger mb-4">Salva Password</button>
                                 </form>
                             </section>
-
-                            <!-- <hr>
-
-                        <section id="delete" class="content-section mt-2 pt-3">
-                        <h2 class="display-3"><span class="text-yellow">Delete</span> Your Account</h2>
-                            <p class="small text-yellow fw-bold"><span class="text-danger">Warning:</span> This action is permanent. All your data will be removed.</p>
-                            <button type="submit" class="btn btn-danger" id="btnDeleteProfile" user_id="{{ Auth::id() }}" csrf_token="{{ csrf_token() }}">Delete Account</button>
-                        </section> -->
-                        </div>
-
-                        <!-- Characters Panel -->
-                        <div class="tab-pane fade" id="v-pills-char" role="tabpanel" aria-labelledby="v-pills-char-tab">
-                            <h2 class="display-3">Your <span class="text-yellow">Characters</span></h2>
-                            <p>Manage or view the characters linked to your account.</p>
-                            <div class="card bg-dark border-light my-3 p-3">
-                                <p class="text-muted">Character system coming soon...</p>
-                            </div>
-                            {{-- Puoi qui inserire una lista di personaggi con ciclo @foreach, se disponibile --}}
-                        </div>
-
-                        <!-- Lorem Ipsum Panel -->
-                        <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel" aria-labelledby="v-pills-wishlist-tab">
-                            <h2 class="display-3"><span class="text-yellow">Lorem</span> Ipsum</h2>
-                            <p>This section is under construction. Stay tuned for updates!</p>
-                            <div class="card bg-dark border-light my-3 p-3">
-                                <p class="text-muted">No content available yet.</p>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </x-layout>

@@ -25,8 +25,9 @@ class ProfileController extends Controller
             'bio' => 'nullable|string|max:1000',
             'facebook' => 'nullable|url',
             'instagram' => 'nullable|url',
-            'linkedin' => 'nullable|url',
-            'whatsapp' => 'nullable|url',
+            'twitch' => 'nullable|url',
+            'github' => 'nullable|url',
+            'discord' => 'nullable|url',
         ]);
 
         if ($request->hasFile('profile_image')) {
@@ -66,6 +67,7 @@ class ProfileController extends Controller
 
     public function index()
     {
-        return view('profile.index'); // Adatta il nome del file blade se diverso
+        $user = Auth::user();
+        return view('profile.index', compact('user')); 
     }
 }

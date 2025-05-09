@@ -5,6 +5,7 @@
             background-size: cover;
             color: white;
             background-attachment: fixed;
+
         }
 
         .contact-card {
@@ -110,7 +111,7 @@
         }
     </style>
     <x-navbar />
-    <div class="container py-5 mb-5 mt-5">
+    <div class="container py-5 mb-5 mt-5 min-vh-100">
         <div class="row justify-content-center mb-5 p-2">
             <div class="col-lg-11 mt-5">
                 <div class="row contact-card px-5 p-5 shadow-lg bg-blur">
